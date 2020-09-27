@@ -17,11 +17,5 @@ export class BlogformComponent implements OnInit {
   insert(blog) {
     console.log('inserting...');
     this.service.addBlog(blog);
-    let title = document.querySelector('#title');
-    title.value = '';
-    let description = document.querySelector('#description');
-    description.value = '';
-    let category = document.querySelector('#category');
-    category.value = '';
   }
 }
