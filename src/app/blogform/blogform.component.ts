@@ -18,10 +18,10 @@ export class BlogformComponent implements OnInit {
     console.log('inserting...');
     this.service.addBlog(blog);
     let title = document.querySelector('#title');
-    title.innerHTML = '';
+    title.value = '';
     let description = document.querySelector('#description');
-    description.innerHTML = '';
+    description.value = '';
     let category = document.querySelector('#category');
-    category.innerHTML = '';
+    category.value = '';
   }
 }
