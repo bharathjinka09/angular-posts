@@ -1,0 +1,18 @@
+<div class="container text-center">
+  <h1>List of Blogs</h1>
+  <div *ngIf="blogs.length == 0">
+    <div>No blogs. Please create one</div>
+  </div>
+  <div *ngIf="blogs.length > 0">
+    <div *ngFor="let blog of blogs" class="card mb-4 p-3">
+      <div>
+        <b>{{ blog.title }}</b>
+      </div>
+      <div>
+        {{ blog.description }}
+
+        <span class="badge badge-primary">{{ blog.category | uppercase }}</span>
+      </div>
+    </div>
+  </div>
+</div>
